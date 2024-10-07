@@ -3,16 +3,102 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /*color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424;*/
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --primary-redColor:#E50914;
+  --primary-blackColor: #000000;
+  --typographyColor-white: #ffffff;
+  --typographyColor-gray1: #8C8C8C;
+  --typographyColor-gray2: #757575;
+  --typographyColor-gray3: #999999;
+  --accentColor-blue: #0071EB;
+  --accentColor-orange: #FFA00A;
+  --accentColor-green: #5FA53F;
+  --color-background: rgb(186,146,146);
+
+}
+body {
+background-color: var(--color-background);
+}
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.5%;
+}
+h2{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: -1.1;
+  letter-spacing: -1%;
+} 
+h3 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: auto;
+  letter-spacing: 0%;
 }
 
+
+#app {
+  margin-left: 15px;
+}
+.rect{
+  color: white;
+  width: 320px;
+  height: 250px;
+  border: solid 1px rgb(54, 23, 23);
+  padding: 32px 5px;
+  font-size: 32px;
+  margin-top: 5px;
+}
+.squareTypog{
+  color: #000000;
+  width: 150px;
+  height: 150px;
+  padding: 40px 0 0 3px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.squareAcc{
+  width: 130px;
+  height: 130px;
+  color: #ffffff;
+  padding: 40px 0 0 3px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.primaryColors {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.typographyColors {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+.accentColors {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+.color {
+  margin-right: 32px;
+}
+.accColor {
+  margin-right: 8px;
+}
 /*a {
   font-weight: 500;
   color: #646cff;
