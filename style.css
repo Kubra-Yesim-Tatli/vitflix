@@ -33,7 +33,7 @@
   --bg-black: black;
   --bg-gray: #222222;
   --bg-light-gray: #303030;
-  --border-radius: 0.5rem;
+  --border-radius: 0.3rem;
 
 }
 body {
@@ -114,6 +114,12 @@ h3 {
 }
 .accColor {
   margin-right: 8px;
+}
+.text-field {
+  font-size: 1rem;
+}
+.lead{
+  font-size: 1rem;
 }
 /*a {
   font-weight: 500;
@@ -196,9 +202,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }*/
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5%;
+}
 .ds-element-container {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 .primary-button, button{
   font-size: 1.2rem;
@@ -239,4 +251,29 @@ button:focus-visible {
   font-size: 16px;
   
 
+}
+.card > span{
+  align-self: center;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  padding: 0.25rem 0.5rem;
+
+}
+.card{
+  background-color: var(--typographyColor-gray1);
+  min-width: 20rem;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card img{
+  height: 2.5rem;
+}
+.card img:first-of-type {
+  padding: 0.2rem;
+}
+.card > div {
+  display: flex;
+  justify-content: space-between;
 }
